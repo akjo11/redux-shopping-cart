@@ -1,0 +1,12 @@
+.item-card {
+     display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 1100px;
+   /*height: 310px; */
+  margin-left: 50px;
+  border-radius: 5px;
+  margin-top: 50px;
+}

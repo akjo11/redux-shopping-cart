@@ -9,19 +9,19 @@
       image : 'https://images.pexels.com/photos/1092392/pexels-photo-1092392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       title : 'Coffee Mug' ,
       description : 'A coffee mug. Give yourself a fresh start to the day!',
-      price : 'Rs. 2000'
+      price : 'Rs. 300'
   },
   {   id : 3,
       image : 'https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       title : 'Laptop' ,
       description : 'A Really cool Macbook Pro',
-      price : 'Rs. 2000'
+      price : 'Rs. 83,610'
   },
   {   id : 4,
       image : 'https://images.pexels.com/photos/46710/pexels-photo-46710.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       title : 'Sunglasses' ,
       description : 'Red lens sunglasses on sand near sea',
-      price : 'Rs. 2000'
+      price : 'Rs. 510'
   },
 ]
 export default products;

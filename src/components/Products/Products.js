@@ -1,10 +1,22 @@
 import React from 'react';
 import products from './Productdata';
-import './Products.css'
+import './Products.css';
+
+
 
 
 
 const Products = () => {
+
+  const ShowItem = (id,image,title,description,price) => {
+    localStorage.setItem('item-id',id);
+    localStorage.setItem('item-image',image);
+    localStorage.setItem('item-title',title);
+    localStorage.setItem('item-description',description);
+    localStorage.setItem('item-price',price);
+    window.location.href = '/product/' + id
+  }
+
     return (
         
 
@@ -26,12 +38,12 @@ const Products = () => {
                        </div>
 
                        <div className="btn-grp">
-                           <div className="view-item">
-                               <button >View Item</button>
-                           </div>
-                           <div className="add-to-cart">
-                               <button>Add to cart</button>
-                           </div>
+                           
+                               <button className='view-item' onClick={() => ShowItem(item.id,item.image,item.title,item.description,item.price) }>View Item</button>
+                           
+                           
+                               <button className='add-to-cart'>Add to cart</button>
+                           
                            
 
 

@@ -3,12 +3,13 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Redirect,
+  Route
+  
 } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import Products from './components/Products/Products';
 import Cart from './components/Cart/Cart';
+import ViewItem from './components/ViewItem/ViewItem';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       <Routes>
         <Route path='/' element={ <Products/>}/>
         <Route path='/cart' element={ <Cart/>}/>
-        
+        <Route path='/product/:id' element={ <ViewItem/>}/>
+
       </Routes>
      
     </div>

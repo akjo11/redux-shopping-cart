@@ -53,7 +53,7 @@
   outline: none;
 }
 
- .view-item button {
+ .view-item  {
   background: red ;
   width: 75px;
   height: auto;
@@ -63,7 +63,7 @@
   margin-left: 10px;
 }
 
- .add-to-cart button {
+ .add-to-cart  {
   background: black ;
   width: 100px;
   height: auto;

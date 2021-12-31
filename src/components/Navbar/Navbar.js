@@ -2,14 +2,15 @@ import React from 'react';
 import './Navbar.css';
 import Badge from "@material-ui/core/Badge";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <div className="navbar">
-            <h2>Shopping Cart</h2>
+           <Link to ='/'> <h2 className='shopping-cart'>Shopping Cart</h2></Link>
 
-            <Badge color="secondary" badgeContent={2}>
-          <ShoppingCartIcon fontSize='large' />{" "}
+            <Badge className='badge' color="secondary" badgeContent={2}>
+          <div className="cart-icon"><ShoppingCartIcon fontSize='large' />{' '}</div>
         </Badge>
         </div>
     )

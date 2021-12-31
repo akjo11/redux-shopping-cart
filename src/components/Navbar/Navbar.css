@@ -10,3 +10,16 @@
   top: 0;
   left: 0;
 }
+.navbar h2:hover {
+  transform: scale(1.1);
+}
+.shopping-cart {
+  color: white;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+}
+.badge:hover {
+   transform: scale(1.1);
+}
