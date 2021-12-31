@@ -1,0 +1,12 @@
+.navbar {
+     /* width: 100%; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.2rem;
+  background: rgb(28, 28, 129);
+  color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
