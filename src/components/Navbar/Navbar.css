@@ -4,7 +4,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 1.2rem;
-  background: rgb(28, 28, 129);
+  background: rgb(0, 0, 0);
   color: white;
   position: sticky;
   top: 0;
@@ -15,6 +15,7 @@
 }
 .shopping-cart {
   color: white;
+  text-decoration: none;
 }
 
 .cart-icon:hover {

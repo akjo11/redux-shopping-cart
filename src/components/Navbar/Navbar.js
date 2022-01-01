@@ -7,11 +7,13 @@ import {Link} from 'react-router-dom';
 const Navbar = () => {
     return (
         <div className="navbar">
-           <Link to ='/'> <h2 className='shopping-cart'>Shopping Cart</h2></Link>
+           <Link to ='/' style={{textDecoration:"none"}}> <h2  className='shopping-cart'>Shopping Cart</h2></Link>
 
+           
+           <Link to = '/cart' style={{color:'yellow'}}>
             <Badge className='badge' color="secondary" badgeContent={2}>
           <div className="cart-icon"><ShoppingCartIcon fontSize='large' />{' '}</div>
-        </Badge>
+        </Badge></Link>
         </div>
     )
 }
