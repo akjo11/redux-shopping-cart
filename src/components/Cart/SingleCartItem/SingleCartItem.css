@@ -1,0 +1,22 @@
+.CartItemInput {
+    display: flex;
+  align-items: center;
+}
+
+.CartItemInput input {
+    padding: 10px;
+  margin-left: 0.4rem;
+  width: 60px;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.trash {
+    transform: scale(1.5);
+     margin-right: 60px;
+    margin-top: 50px;
+    height: 100px;
+}
+
+

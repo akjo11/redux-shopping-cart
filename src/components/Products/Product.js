@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
+import {connect} from 'react-redux';
+import { addToCart } from '../../Redux/Shopping/shopping-actions';
 
-const Product = ({data}) => {
+const Product = ({data,addToCart}) => {
     return (
          <div key={data.id} className="product-card">
                        <div className="product-image">
@@ -9,7 +11,7 @@ const Product = ({data}) => {
                        <div className="product-details">
                            <div className="product-title"><h2>{data.title}</h2></div>
                            <div className="product-desc">{data.description}</div>
-                           <div className="product-price"><h3>{data.price}</h3></div>
+                           <div className="product-price"><h3> Rs. {data.price}</h3></div>
 
                        </div>
 
@@ -18,7 +20,7 @@ const Product = ({data}) => {
                                <button className='view-item' >View Item</button>
                            
                            
-                               <button className='add-to-cart'>Add to cart</button>
+                               <button className='add-to-cart' onClick={() => addToCart(data.id)} >Add to cart</button>
                            
                            
 
@@ -29,4 +31,10 @@ const Product = ({data}) => {
     )
 }
 
-export default Product;
+const mapDispatchToProps = (dispatch) => {
+    return {
+       addToCart : (id) => dispatch(addToCart(id)),
+    };
+};
+
+export default connect(null, mapDispatchToProps)(Product);
