@@ -83,4 +83,11 @@ button:hover {
     display: block;
 
   }
+
+  .view-item {
+    margin-bottom: 10px;
+  }
+  .btn-grp {
+    margin-bottom: 20px;
+  }
 }

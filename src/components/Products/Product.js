@@ -1,8 +1,10 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import { addToCart } from '../../Redux/Shopping/shopping-actions';
+import {Link} from 'react-router-dom';
+import { ShowItem } from '../../Redux/Shopping/shopping-actions';
 
-const Product = ({data,addToCart}) => {
+const Product = ({data,addToCart, ShowItem}) => {
     return (
          <div key={data.id} className="product-card">
                        <div className="product-image">
@@ -17,7 +19,10 @@ const Product = ({data,addToCart}) => {
 
                        <div className="btn-grp">
                            
-                               <button className='view-item' >View Item</button>
+                               
+                               <Link to = {`/product/${data.id}`}>
+                                 <button onClick={() => ShowItem(data)} className='view-item' >View Item</button>
+                               </Link>
                            
                            
                                <button className='add-to-cart' onClick={() => addToCart(data.id)} >Add to cart</button>
@@ -34,6 +39,7 @@ const Product = ({data,addToCart}) => {
 const mapDispatchToProps = (dispatch) => {
     return {
        addToCart : (id) => dispatch(addToCart(id)),
+       ShowItem : (item) => dispatch(ShowItem(item)),
     };
 };
 

@@ -42,3 +42,20 @@
     justify-content: space-around;
 }
 
+@media(max-width : 1564px ) {
+   .cart-and-checkout {
+     flex-direction: column;
+   }
+}
+
+@media(max-width : 1476px) {
+  .cart-and-checkout {
+    margin-left: 10px;
+  }
+}
+@media(max-width : 520px) {
+  .navbar {
+    width : 100%
+  }
+}
+

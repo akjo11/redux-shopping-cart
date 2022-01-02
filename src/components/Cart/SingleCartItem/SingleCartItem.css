@@ -18,5 +18,22 @@
     margin-top: 50px;
     height: 100px;
 }
+.trash:hover {
+ transform: scale(1.2) ;
+}
 
 
+@media(max-width : 1476px) {
+  .product-card {
+    flex-direction: column;
+    width: 500px;
+    
+  }
+
+  .trash {
+    margin-left: 400px;
+    margin-bottom: 100px;
+  }
+
+ 
+}
