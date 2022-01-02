@@ -18,5 +18,15 @@ Tech Stack used :
 5. Cart Counter
 6. Cart summary & checkout
 
+### Pages :
+1. Home Page
+2. View Item Page
+3. Cart Page
 
+![991f1de3-48d4-43d6-8d8a-8de87d98c5d5](https://user-images.githubusercontent.com/56825541/147879015-38b12400-68c6-4ab6-8a80-8a0548804cf4.jpg)
 
+![8e5842ee-db47-46de-af8f-3d9fd5f17f89](https://user-images.githubusercontent.com/56825541/147879017-3b6d1d57-9119-4bb6-8599-e74cf3ed1acf.jpg)
+
+![f6d0414c-8f00-44a4-aabf-40dc08143c1c](https://user-images.githubusercontent.com/56825541/147879022-047d3f52-2ee9-459c-af68-aebd53a4e7fb.jpg)
+
+![d43c784d-e7f2-49b1-b28c-18e92e1ee755](https://user-images.githubusercontent.com/56825541/147879028-e928e8f7-4e4f-4352-ad0e-7df241736714.jpg)
