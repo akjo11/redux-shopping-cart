@@ -23,5 +23,17 @@
       description : 'Red lens sunglasses on sand near sea',
       price : 510
   },
+  {   id : 5,
+      image : 'https://images.pexels.com/photos/364822/rolex-watch-time-luxury-364822.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+      title : 'Watch' ,
+      description : 'Round Rolex Analog Watch',
+      price : 705834
+  },
+  {   id : 6,
+      image : 'https://images.pexels.com/photos/4061385/pexels-photo-4061385.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+      title : 'Shoes' ,
+      description : 'Brown Nike Air Jordan 1 ',
+      price : 5899
+  },
 ]
 export default products;
