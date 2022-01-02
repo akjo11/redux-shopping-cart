@@ -4,19 +4,34 @@ import products from '../../components/Products/Productdata';
 const initial_state = {
     products : products,
     cart : [],
-    currentItem : []
+    currentItem : null
 }
 
 const shopReducer = (state = initial_state, action) => {
     switch (action.types) {
         case ActionTypes.Add_to_cart :
-            return {};
+            const item = state.products.find(item => (item.id === action.payload.id));
+            const inCart = state.cart.find((obj) => obj.id === item.id ? true : false);
+            
+            return {
+                ...state,
+                cart : inCart ? state.cart.map((item) => item.id === action.payload.id ? {...item, qty : item.qty + 1} : item ) : {...item,qty : 1},
+            };
         case ActionTypes.Remove_from_cart :
-            return {};
+
+            return {
+                ...state, cart : state.cart.filter((item) => item.id !== action.payload.id),
+            };
         case ActionTypes.Adjust_quantity : 
-        return {};
+        return {
+            ...state,
+            cart : state.cart.map((item) => item.id === action.payload.id ? {...item, qty : action.payload.qty} : item),
+        };
         case ActionTypes.Show_item : 
-        return {};
+        return {
+            ...state,
+            currentItem : action.payload
+        };
         default :
         return state;
     }

@@ -32,8 +32,8 @@ export const AdjustQuantity = (itemID, value) => {
 export const ShowItem = (item) => {
     return {
         type : ActionTypes.Show_item,
-        payload : {
-            item : item
-        }
+        payload : item
+            
+        
     }
 };
