@@ -27,10 +27,3 @@
    transform: scale(1.1);
 }
 
-@media (max-width : 627px) {
-  .navbar{
-   float : none;
-
-   justify-content: flex-start;
-  }
-}

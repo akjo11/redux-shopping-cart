@@ -27,8 +27,9 @@ const Cart = ({cart}) => {
                     title: "Payment Successful",
                     text: "Have a nice day!",
                     icon: "success",
-                    button: "OK",
-});
+                    button : "OK",
+                              });
+                 
      }
     return (
        

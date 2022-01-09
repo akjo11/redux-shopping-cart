@@ -1,6 +1,6 @@
 ### An Ecommerce Shopping Cart using React.js and Redux (state management).
 
-Tech Stack used : 
+Tech Stack used :
 
 [![React Js](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://www.npmjs.com/package/react)
 [![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)](https://www.npmjs.com/package/redux)
@@ -9,16 +9,17 @@ Tech Stack used :
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.npmjs.com/package/css3)
 [![React-Routing](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://www.npmjs.com/package/react-router)
 
-### Functionalities : 
+### Functionalities :
 
 1. Add to cart
 2. View Item
 3. Remove from Cart
 4. Adjust quantity
-5. Cart Counter
-6. Cart summary & checkout
+5. Cart Counter (changes whenever you add to cart from home page or adjust quantity in cart page)
+6. Cart summary (shows total cost and number of items ) & checkout (with a pop up box indicating successful transaction)
 
 ### Pages :
+
 1. Home Page
 2. View Item Page
 3. Cart Page
