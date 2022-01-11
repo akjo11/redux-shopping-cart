@@ -44,7 +44,7 @@ const Cart = ({cart}) => {
                 <h1>Cart Summary</h1>
                 <br />
                 <h3>Total Price : Rs. {Totalprice}</h3>
-                <h3>Total Items : Rs. {Totalitems}</h3>
+                <h3>Total Items :  {Totalitems}</h3>
                 
                <button onClick={OnCheckOut}>CHECK OUT</button>
 
